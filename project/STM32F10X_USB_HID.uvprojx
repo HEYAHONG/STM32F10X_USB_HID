@@ -775,11 +775,6 @@
               <FilePath>..\platform_config.h</FilePath>
             </File>
             <File>
-              <FileName>startup_stm32f10x_md_vl.s</FileName>
-              <FileType>2</FileType>
-              <FilePath>..\startup_stm32f10x_md_vl.s</FilePath>
-            </File>
-            <File>
               <FileName>stm32_it.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\stm32_it.c</FilePath>
@@ -803,6 +798,11 @@
               <FileName>system_stm32f10x.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\system_stm32f10x.h</FilePath>
+            </File>
+            <File>
+              <FileName>startup_stm32f10x_md.s</FileName>
+              <FileType>2</FileType>
+              <FilePath>..\startup_stm32f10x_md.s</FilePath>
             </File>
           </Files>
         </Group>

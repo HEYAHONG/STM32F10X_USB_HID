@@ -62,6 +62,14 @@ int main(void)
 
   while (1)
   {
+		/* //PC机接收测试代码
+		static unsigned char count=0;
+		__IO uint8_t Send_Buffer[2];
+		Send_Buffer[0]=0x07;
+		Send_Buffer[1]=count++;
+		USB_SIL_Write(EP1_IN, (uint8_t*) Send_Buffer, 2);  
+    SetEPTxValid(ENDP1);
+		Delay(0x8ffff);*/
   }
 }
 

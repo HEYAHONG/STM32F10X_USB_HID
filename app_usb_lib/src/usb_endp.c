@@ -52,7 +52,7 @@ void EP1_OUT_Callback(void)
   // BitAction Led_State;
 
   // /* Read received data (2 bytes) */  
-  // USB_SIL_Read(EP1_OUT, Receive_Buffer);
+   USB_SIL_Read(EP1_OUT, Receive_Buffer);
   
   // if (Receive_Buffer[1] == 0)
   // {
@@ -113,8 +113,13 @@ void EP1_OUT_Callback(void)
     // STM_EVAL_LEDOff(LED4); 
     // break;
   // }
- 
-  // SetEPRxStatus(ENDP1, EP_RX_VALID);
+	//PC∑¢ÀÕ≤‚ ‘¥˙¬Î
+		__IO uint8_t Send_Buffer[2];
+		Send_Buffer[0]=0x05;
+		Send_Buffer[1]=Receive_Buffer[1];
+		USB_SIL_Write(EP1_IN, (uint8_t*) Send_Buffer, 2);  
+    SetEPTxValid(ENDP1);
+   SetEPRxStatus(ENDP1, EP_RX_VALID);
  
 }
 
