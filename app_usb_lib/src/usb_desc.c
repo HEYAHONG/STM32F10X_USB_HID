@@ -111,9 +111,9 @@ const uint8_t CustomHID_ConfigDescriptor[CUSTOMHID_SIZ_CONFIG_DESC] =
 
     0x81,          /* bEndpointAddress: Endpoint Address (IN) */
     0x03,          /* bmAttributes: Interrupt endpoint */
-    0x02,          /* wMaxPacketSize: 2 Bytes max */
+    0x20,          /* wMaxPacketSize: 32 Bytes max */
     0x00,
-    0x20,          /* bInterval: Polling Interval (32 ms) */
+    0x01,          /* bInterval: Polling Interval (1 ms) */
     /* 34 */
     	
     0x07,	/* bLength: Endpoint Descriptor size */
@@ -122,9 +122,9 @@ const uint8_t CustomHID_ConfigDescriptor[CUSTOMHID_SIZ_CONFIG_DESC] =
     0x01,	/* bEndpointAddress: */
 			/*	Endpoint Address (OUT) */
     0x03,	/* bmAttributes: Interrupt endpoint */
-    0x02,	/* wMaxPacketSize: 2 Bytes max  */
+    0x20,	/* wMaxPacketSize: 32 Bytes max  */
     0x00,
-    0x20,	/* bInterval: Polling Interval (20 ms) */
+    0x01,	/* bInterval: Polling Interval (1 ms) */
     /* 41 */
   }
   ; /* CustomHID_ConfigDescriptor */
@@ -236,7 +236,7 @@ const uint8_t CustomHID_ReportDescriptor[CUSTOMHID_SIZ_REPORT_DESC] =
     0x09, 0x07,            /*     USAGE (ADC IN)             */          
     0x15, 0x00,            /*     LOGICAL_MINIMUM (0)        */               
     0x26, 0xff, 0x00,      /*     LOGICAL_MAXIMUM (255)      */                 
-    0x75, 0x08,            /*     REPORT_SIZE (8)            */           
+    0x75, 0xF8,            /*     REPORT_SIZE (248)            */           
     0x81, 0x82,            /*     INPUT (Data,Var,Abs,Vol)   */                    
     0x85, 0x07,            /*     REPORT_ID (7)              */                 
     0x09, 0x07,            /*     USAGE (ADC in)             */                     
