@@ -1028,7 +1028,7 @@ I (..\Libraries\STM32_USB-FS-Device_Driver\inc\usb_init.h)(0x50FD8893)
 I (..\Libraries\STM32_USB-FS-Device_Driver\inc\usb_sil.h)(0x50FD8893)
 I (..\Libraries\STM32_USB-FS-Device_Driver\inc\usb_mem.h)(0x50FD8893)
 I (..\Libraries\STM32_USB-FS-Device_Driver\inc\usb_int.h)(0x50FD8893)
-I (..\app_usb_lib\inc\usb_desc.h)(0x5C989521)
+I (..\app_usb_lib\inc\usb_desc.h)(0x5C9A051D)
 I (..\app_usb_lib\inc\usb_pwr.h)(0x50FD888F)
 F (..\hw_config.h)(0x50FD888F)()
 F (..\main.c)(0x5C99CB06)(--c99 -c --cpu Cortex-M3 -g -O2 --apcs=interwork --split_sections -I ..\..\STM32F10X_USB_HID -I ..\Libraries\STM32_USB-FS-Device_Driver\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\app_usb_lib\inc -I ..\Libraries\CMSIS\Include-I.\RTE\_USB_HID-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="523" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
@@ -1158,11 +1158,11 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x50FD88AD)
 F (..\system_stm32f10x.h)(0x50FD88A6)()
 F (..\startup_stm32f10x_md.s)(0x50FD88A5)(--cpu Cortex-M3 -g --apcs=interwork -I.\RTE\_USB_HID-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 523" --pd "STM32F10X_MD SETA 1"--list .\listings\startup_stm32f10x_md.lst --xref -o .\objects\startup_stm32f10x_md.o --depend .\objects\startup_stm32f10x_md.d)
 F (..\app_usb_lib\inc\usb_conf.h)(0x50FD888F)()
-F (..\app_usb_lib\inc\usb_desc.h)(0x5C989521)()
+F (..\app_usb_lib\inc\usb_desc.h)(0x5C9A051D)()
 F (..\app_usb_lib\inc\usb_istr.h)(0x50FD888F)()
 F (..\app_usb_lib\inc\usb_prop.h)(0x50FD888F)()
 F (..\app_usb_lib\inc\usb_pwr.h)(0x50FD888F)()
-F (..\app_usb_lib\src\usb_desc.c)(0x5C99CBC1)(--c99 -c --cpu Cortex-M3 -g -O2 --apcs=interwork --split_sections -I ..\..\STM32F10X_USB_HID -I ..\Libraries\STM32_USB-FS-Device_Driver\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\app_usb_lib\inc -I ..\Libraries\CMSIS\Include-I.\RTE\_USB_HID-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="523" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\usb_desc.o --omf_browse .\objects\usb_desc.crf --depend .\objects\usb_desc.d)
+F (..\app_usb_lib\src\usb_desc.c)(0x5C9A050D)(--c99 -c --cpu Cortex-M3 -g -O2 --apcs=interwork --split_sections -I ..\..\STM32F10X_USB_HID -I ..\Libraries\STM32_USB-FS-Device_Driver\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\app_usb_lib\inc -I ..\Libraries\CMSIS\Include-I.\RTE\_USB_HID-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="523" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\usb_desc.o --omf_browse .\objects\usb_desc.crf --depend .\objects\usb_desc.d)
 I (..\Libraries\STM32_USB-FS-Device_Driver\inc\usb_lib.h)(0x50FD8893)
 I (..\..\STM32F10X_USB_HID\hw_config.h)(0x50FD888F)
 I (..\..\STM32F10X_USB_HID\platform_config.h)(0x5C96DDF5)
@@ -1204,7 +1204,7 @@ I (..\Libraries\STM32_USB-FS-Device_Driver\inc\usb_init.h)(0x50FD8893)
 I (..\Libraries\STM32_USB-FS-Device_Driver\inc\usb_sil.h)(0x50FD8893)
 I (..\Libraries\STM32_USB-FS-Device_Driver\inc\usb_mem.h)(0x50FD8893)
 I (..\Libraries\STM32_USB-FS-Device_Driver\inc\usb_int.h)(0x50FD8893)
-I (..\app_usb_lib\inc\usb_desc.h)(0x5C989521)
+I (..\app_usb_lib\inc\usb_desc.h)(0x5C9A051D)
 F (..\app_usb_lib\src\usb_endp.c)(0x5C989521)(--c99 -c --cpu Cortex-M3 -g -O2 --apcs=interwork --split_sections -I ..\..\STM32F10X_USB_HID -I ..\Libraries\STM32_USB-FS-Device_Driver\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\app_usb_lib\inc -I ..\Libraries\CMSIS\Include-I.\RTE\_USB_HID-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="523" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\usb_endp.o --omf_browse .\objects\usb_endp.crf --depend .\objects\usb_endp.d)
 I (..\..\STM32F10X_USB_HID\hw_config.h)(0x50FD888F)
 I (..\..\STM32F10X_USB_HID\platform_config.h)(0x5C96DDF5)
@@ -1336,7 +1336,7 @@ I (..\Libraries\STM32_USB-FS-Device_Driver\inc\usb_sil.h)(0x50FD8893)
 I (..\Libraries\STM32_USB-FS-Device_Driver\inc\usb_mem.h)(0x50FD8893)
 I (..\Libraries\STM32_USB-FS-Device_Driver\inc\usb_int.h)(0x50FD8893)
 I (..\app_usb_lib\inc\usb_prop.h)(0x50FD888F)
-I (..\app_usb_lib\inc\usb_desc.h)(0x5C989521)
+I (..\app_usb_lib\inc\usb_desc.h)(0x5C9A051D)
 I (..\app_usb_lib\inc\usb_pwr.h)(0x50FD888F)
 F (..\app_usb_lib\src\usb_pwr.c)(0x50FD888E)(--c99 -c --cpu Cortex-M3 -g -O2 --apcs=interwork --split_sections -I ..\..\STM32F10X_USB_HID -I ..\Libraries\STM32_USB-FS-Device_Driver\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\app_usb_lib\inc -I ..\Libraries\CMSIS\Include-I.\RTE\_USB_HID-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="523" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\usb_pwr.o --omf_browse .\objects\usb_pwr.crf --depend .\objects\usb_pwr.d)
 I (..\Libraries\STM32_USB-FS-Device_Driver\inc\usb_lib.h)(0x50FD8893)

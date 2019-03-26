@@ -242,6 +242,18 @@ const uint8_t CustomHID_ReportDescriptor[CUSTOMHID_SIZ_REPORT_DESC] =
     0x09, 0x07,            /*     USAGE (ADC in)             */                     
     0xb1, 0x82,            /*     FEATURE (Data,Var,Abs,Vol) */                                 
     /* 161 */
+		
+		 /* ADC OUT */
+    0x85, 0x08,            /*     REPORT_ID (8)              */         
+    0x09, 0x08,            /*     USAGE (ADC OUT)             */          
+    0x15, 0x00,            /*     LOGICAL_MINIMUM (0)        */               
+    0x26, 0xff, 0x00,      /*     LOGICAL_MAXIMUM (255)      */                 
+    0x75, 0xF8,            /*     REPORT_SIZE (248)            */           
+    0x91, 0x82,            /*     OUTPUT (Data,Var,Abs,Vol)  */                   
+    0x85, 0x08,            /*     REPORT_ID (8)              */                 
+    0x09, 0x08,            /*     USAGE (ADC out)             */                     
+    0xb1, 0x82,            /*     FEATURE (Data,Var,Abs,Vol) */                                 
+    /* 180 */
 
     0xc0 	          /*     END_COLLECTION	             */
   }; /* CustomHID_ReportDescriptor */
