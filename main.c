@@ -75,8 +75,8 @@ int main(void)
 			}
 		}
 		USB_SIL_Write(EP1_IN, (uint8_t*) Send_Buffer, 32);  
-    SetEPTxValid(ENDP1);
-		Delay(0x8ffff);*/
+    SetEPTxValid(ENDP1);*/
+		Delay(0x8ffff);
   }
 }
 

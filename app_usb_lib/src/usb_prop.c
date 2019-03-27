@@ -43,7 +43,7 @@
 uint32_t ProtocolValue;
 __IO uint8_t EXTI_Enable;
 __IO uint8_t Request = 0;
-uint8_t Report_Buf[2];   
+uint8_t Report_Buf[32];   
 /* -------------------------------------------------------------------------- */
 /*  Structures initializations */
 /* -------------------------------------------------------------------------- */

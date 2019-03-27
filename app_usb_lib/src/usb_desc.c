@@ -139,14 +139,14 @@ const uint8_t CustomHID_ReportDescriptor[CUSTOMHID_SIZ_REPORT_DESC] =
     0x85, 0x01,            /*     REPORT_ID (1)		     */
     0x09, 0x01,            /*     USAGE (LED 1)	             */
     0x15, 0x00,            /*     LOGICAL_MINIMUM (0)        */          
-    0x25, 0x01,            /*     LOGICAL_MAXIMUM (1)        */           
-    0x75, 0x08,            /*     REPORT_SIZE (8)            */        
+    0x26, 0xff, 0x00,            /*     LOGICAL_MAXIMUM (255)        */           
+    0x75, 0xF8,            /*     REPORT_SIZE (248)            */        
     0x95, 0x01,            /*     REPORT_COUNT (1)           */       
-    0xB1, 0x82,             /*    FEATURE (Data,Var,Abs,Vol) */     
+    0xB1, 0x80,             /*    FEATURE (Data,arry,Abs,Vol) */     
 
     0x85, 0x01,            /*     REPORT_ID (1)              */
     0x09, 0x01,            /*     USAGE (LED 1)              */
-    0x91, 0x82,            /*     OUTPUT (Data,Var,Abs,Vol)  */
+    0x91, 0x80,            /*     OUTPUT (Data,arry,Abs,Vol)  */
     /* 26 */
     
     /* Led 2 */
@@ -243,18 +243,6 @@ const uint8_t CustomHID_ReportDescriptor[CUSTOMHID_SIZ_REPORT_DESC] =
     0xb1, 0x82,            /*     FEATURE (Data,Var,Abs,Vol) */                                 
     /* 161 */
 		
-		 /* ADC OUT */
-    0x85, 0x08,            /*     REPORT_ID (8)              */         
-    0x09, 0x08,            /*     USAGE (ADC OUT)             */          
-    0x15, 0x00,            /*     LOGICAL_MINIMUM (0)        */               
-    0x26, 0xff, 0x00,      /*     LOGICAL_MAXIMUM (255)      */                 
-    0x75, 0xF8,            /*     REPORT_SIZE (248)            */           
-    0x91, 0x82,            /*     OUTPUT (Data,Var,Abs,Vol)  */                   
-    0x85, 0x08,            /*     REPORT_ID (8)              */                 
-    0x09, 0x08,            /*     USAGE (ADC out)             */                     
-    0xb1, 0x82,            /*     FEATURE (Data,Var,Abs,Vol) */                                 
-    /* 180 */
-
     0xc0 	          /*     END_COLLECTION	             */
   }; /* CustomHID_ReportDescriptor */
 

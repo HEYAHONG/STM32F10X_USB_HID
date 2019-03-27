@@ -36,7 +36,7 @@
 /* Private define ------------------------------------------------------------*/
 /* Private macro -------------------------------------------------------------*/
 /* Private variables ---------------------------------------------------------*/
-uint8_t Receive_Buffer[2];
+uint8_t Receive_Buffer[32];
 extern __IO uint8_t PrevXferComplete;
 /* Private function prototypes -----------------------------------------------*/
 /* Private functions ---------------------------------------------------------*/
@@ -114,10 +114,14 @@ void EP1_OUT_Callback(void)
     // break;
   // }
 	//PC∑¢ÀÕ≤‚ ‘¥˙¬Î
-		__IO uint8_t Send_Buffer[2];
-		Send_Buffer[0]=0x05;
-		Send_Buffer[1]=Receive_Buffer[1];
-		USB_SIL_Write(EP1_IN, (uint8_t*) Send_Buffer, 2);  
+		__IO uint8_t Send_Buffer[32];
+		unsigned char temp=0;
+		for(temp=0;temp<32;temp++)
+		{
+		Send_Buffer[temp]=Receive_Buffer[temp];
+		}
+		Send_Buffer[0]=0x07;
+		USB_SIL_Write(EP1_IN, (uint8_t*) Send_Buffer, 32);  
     SetEPTxValid(ENDP1);
    SetEPRxStatus(ENDP1, EP_RX_VALID);
  

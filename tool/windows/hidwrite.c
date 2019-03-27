@@ -10,7 +10,7 @@
 int main(int argc, char* argv[])
 {
 	int res;
-	unsigned char buf[2];
+	unsigned char buf[32];
 	wchar_t wstr[MAX_STR];
 	hid_device *handle;
 	int i;
@@ -47,17 +47,18 @@ int main(int argc, char* argv[])
 	// buf[0] = 0x0;
 	// buf[1] = 0x1;
 	// res = hid_write(handle, buf, 2);
+	for(i=0;i<32;i++)
+	{buf[i]=i;}
 	while(1) {
 	//send data
 	buf[0]=0x01;
-	buf[1]=buf[1]?0:1;
-	printf("send buf:%d\n",buf[1]);
-	res = hid_write(handle,buf,2);
+	res = hid_write(handle,buf,32);
+	printf("Send %d bytes\n",res);
 	// Read requested state
-	res = hid_read(handle, buf, 2);
+	res = hid_read(handle, buf,32);
 
 	// Print out the returned buffer.
-	for (i = 0; i < 2; i++)
+	for (i = 0; i < 32; i++)
 		printf("buf[%d]: %X\n", i, buf[i]);
 	}
 	// Finalize the hidapi library

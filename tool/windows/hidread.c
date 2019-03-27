@@ -10,7 +10,7 @@
 int main(int argc, char* argv[])
 {
 	int res;
-	unsigned char buf[2];
+	unsigned char buf[32];
 	wchar_t wstr[MAX_STR];
 	hid_device *handle;
 	int i;
@@ -50,10 +50,10 @@ int main(int argc, char* argv[])
 	while(1) {
 
 	// Read requested state
-	res = hid_read(handle, buf, 2);
+	res = hid_read(handle, buf, 32);
 
 	// Print out the returned buffer.
-	for (i = 0; i < 2; i++)
+	for (i = 0; i < 32; i++)
 		printf("buf[%d]: %X\n", i, buf[i]);
 	}
 	// Finalize the hidapi library
